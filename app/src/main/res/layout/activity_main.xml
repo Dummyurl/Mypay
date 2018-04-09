@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fcfcfe"
+    android:layout_height="match_parent"
+    tools:context="com.premsoftst.mypay.MainActivity">
+
+  <!--<include layout="@layout/toolbar"></include>-->
+
+
+
+
+    <ViewFlipper
+        android:layout_margin="3dp"
+        android:id="@+id/viewflipper"
+        android:layout_width="fill_parent"
+        android:layout_height="170dp">
+
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="First Screen"/>-->
+        <Button
+            android:id="@+id/button1"
+            android:background="@drawable/coming"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+           />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:orientation="vertical">
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Second Screen"/>-->
+        <Button
+            android:id="@+id/button2"
+            android:background="@drawable/pay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent"
+          android:orientation="vertical">
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Second Screen"/>-->
+        <Button
+            android:id="@+id/button3"
+            android:background="@drawable/bitcoin"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+      </LinearLayout>
+    </ViewFlipper>
+
+  <ScrollView
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+      android:scrollbars="none">
+  <LinearLayout
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:background="#69db84"
+      android:elevation="5dp"
+      android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_marginTop="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5dp"
+          android:textSize="18dp"
+          android:textColor="#fff"
+          android:text="Current Balance"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textSize="40dp"
+          android:layout_marginBottom="10dp"
+          android:layout_marginLeft="15dp"
+          android:text="5820"
+          android:textColor="#fff"
+          />
+
+    </LinearLayout>
+    <!--<View-->
+        <!--android:layout_width="2dp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="#ffffff"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:layout_height="match_parent"></View>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_weight="1">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:text="SEND"
+          android:background="@drawable/taxt_underline"
+          android:layout_marginTop="15dp"
+          android:layout_marginLeft="30dp"
+          android:textColor="#fff"
+          android:textSize="16dp"
+          android:layout_height="wrap_content" />
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:text="REQUEST"
+          android:layout_marginLeft="30dp"
+          android:textColor="#fff"
+          android:background="@drawable/taxt_underline"
+          android:layout_marginTop="10dp"
+          android:textSize="16dp"
+          android:layout_height="wrap_content" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:text="WITHDRAW"
+          android:layout_marginLeft="30dp"
+          android:textColor="#fff"
+          android:background="@drawable/taxt_underline"
+          android:textSize="16dp"
+          android:layout_marginTop="10dp"
+          android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+  </LinearLayout>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="16dp"
+      android:textColor="#0a0a0a"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="10dp"
+      android:text="Recharge &amp; Bills"/>
+
+    <LinearLayout
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="3"
+      android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:background="@drawable/mobile" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:text="Mobile"
+          android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_weight="1"
+          android:background="@drawable/data_card" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:text="Data Card"
+          android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:background="@drawable/dth" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:text="DTH"
+          android:textAlignment="center" />
+
+    </LinearLayout>
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_weight="3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+      <ImageView
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:background="@drawable/landline"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textAlignment="center"
+          android:layout_marginTop="5dp"
+          android:text="Landline"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+      <ImageView
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:layout_gravity="center"
+          android:background="@drawable/electricity"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textAlignment="center"
+          android:layout_marginTop="5dp"
+          android:text="Electricity"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+      <ImageView
+          android:layout_width="80dp"
+
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_weight="1"
+          android:background="@drawable/ga"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textAlignment="center"
+          android:layout_marginTop="5dp"
+          android:text="Gas"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+  </ScrollView>
+</LinearLayout>
