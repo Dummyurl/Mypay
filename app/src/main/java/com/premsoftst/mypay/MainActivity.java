@@ -21,8 +21,6 @@ public class MainActivity extends AppCompatActivity {
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "font/adi_bold.otf");
 
         final ViewFlipper MyViewFlipper = (ViewFlipper)findViewById(R.id.viewflipper);
-        //Button button1 = (Button)findViewById(R.id.button1);
-        //Button button2 = (Button)findViewById(R.id.button2);
         MyViewFlipper.startFlipping();
         MyViewFlipper.setFlipInterval(1500);
 //        textTitle = findViewById(R.id.txt_title);

@@ -15,14 +15,12 @@ public class Splash_Activity extends AppCompatActivity {
     /** Duration of wait **/
     private final int SPLASH_DISPLAY_LENGTH = 1000;
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spalsh);
         getSupportActionBar().hide();
-   /* New Handler to start the Menu-Activity
-         * and close this Splash-Screen after some seconds.*/
+   /* New Handler to start the Menu-Activity * and close this Splash-Screen after some seconds.*/
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
@@ -34,4 +32,5 @@ public class Splash_Activity extends AppCompatActivity {
         }, SPLASH_DISPLAY_LENGTH);
 
     }
+
 }
